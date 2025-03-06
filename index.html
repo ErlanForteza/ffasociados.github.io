@@ -9,7 +9,6 @@
 </head>
 <body>
     <!-- Imágenes decorativas -->
-    <img src="EscuadraCompas1-removebg-preview.png" alt="Logo2" class="imagen-esquina-izquierda">
     <img src="Fondo1.png" alt="Logo Inferior Derecho" class="imagen-esquina-inferior-derecha">
 
     <header>
@@ -34,8 +33,10 @@
         <section id="nosotros">
             <h2>Sobre Nosotros</h2>
             <p>Contamos con más de 25 años de experiencia ofreciendo asesoría y defensa legal de primer nivel.<br>
+            <br>
             Sabemos que cada caso es único y requiere una atención personalizada.<br>
-            Por ello, nos dedicamos a brindarte soluciones claras y eficaces con un compromiso total hacia tus intereses.</p>
+            <br>
+            Nos dedicamos a brindarte soluciones claras y eficaces con un compromiso total hacia tus intereses.</p>
         </section>
 
         <section id="servicios">
@@ -60,34 +61,45 @@
 
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>• Erlan Forteza Cuellar<br>Email: efc1965@gmail.com<br>Teléfono: +591 70912143</p>
+            <p>• Dr. Erlan Forteza Cuellar<br>Email: efc1965@gmail.com<br>Teléfono: +591 70912143</p>
             <br>
-            <p>• Fernanda Nicole Forteza Pol<br>Email: efc1965@gmail.com<br>Teléfono: +591 65940083</p>
+            <p>• Dra. Fernanda Nicole Forteza Pol<br>Email: efc1965@gmail.com<br>Teléfono: +591 65940083</p>
             <p>Dirección: <a href="https://www.google.com/maps" target="_blank">Av. Guapay entre 3er y 4to anillo, C/ Bernardino Gutierrez #3085, Santa Cruz de la Sierra, Bolivia.</a></p>
         </section>
 
         <section id="buzon">
             <h2>Envíanos tu consulta</h2>
             <form action="https://wa.me/59170912143" method="get" target="_blank">
-                <label for="nombre">Nombre Completo:</label>
-                <br>
-                <input type="text" id="nombre" name="nombre" required>
-                <br>
-                <label for="contacto">Teléfono o Correo Electrónico:</label>
-                <br>
-                <input type="text" id="contacto" name="contacto" required>
-                <br>
-                <label for="mensaje">Descripción breve del caso:</label>
-                <br>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
+                <button type="submit">Whatsapp - Dr. Erlan Forteza </button>
+            </form>
+            <br>
+            <form action="https://wa.me/59165940083" method="get" target="_blank">
+                <button type="submit">Whatsapp - Dra. Fernanda Forteza </button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Forteza & Forteza Asociados<br>Todos los derechos reservados<br> Santa Cruz - Bolivia</p>
+        <p>&copy; 2025 Forteza & Forteza<br>Todos los derechos reservados<br> Santa Cruz - Bolivia</p>
     </footer>
+    
+    <style>
+        @media screen and (max-width: 768px) {
+            .imagen-esquina-inferior-derecha {
+                width: 230px;
+                bottom: 0px;
+                right: 0px;
+                position: fixed;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .imagen-esquina-inferior-derecha {
+                width: 150px;
+                bottom: 0px;
+                right: 0px;
+                opacity: 0.6;
+            }
+        }
+    </style>
 </body>
 </html>
