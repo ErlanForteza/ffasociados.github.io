@@ -11,29 +11,24 @@ body {
 }
 
 /* Posicionamiento de imágenes */
-.imagen-esquina-derecha, .imagen-esquina-izquierda, .imagen-esquina-inferior-derecha {
+.imagen-esquina-izquierda, .imagen-esquina-inferior-derecha {
     position: absolute;
-    z-index: 1000;
-}
-
-.imagen-esquina-derecha {
-    top: 20px;
-    right: 20px;
-    width: 150px;
+    z-index: 5;  /* Imagen en el fondo, por debajo del footer */
 }
 
 .imagen-esquina-izquierda {
-    top: 20px;
-    left: 20px;
-    width: 150px;
+    top: 60px;
+    left: 30px;
+    width: 100px;
+    pointer-events: none;  /* Desactiva la interacción con la imagen */
 }
 
 .imagen-esquina-inferior-derecha {
-    bottom: 10px;
-    right: 10px;
-    width: 400px;
+    bottom: 0px;
+    right: 0px;
+    width: 450px;
     opacity: 0.4;
-    z-index: -1;
+    pointer-events: none;  /* Desactiva la interacción con la imagen */
 }
 
 /* Encabezado */
@@ -111,6 +106,8 @@ footer {
     width: 100%;
     margin-top: auto;
     font-size: 1rem;
+    position: relative;  /* Permite que el footer se quede en el flujo normal */
+    z-index: 10;         /* Asegura que el pie de página esté por encima de la imagen */
 }
 
 /* Responsividad */
@@ -125,7 +122,7 @@ footer {
     }
 
     section {
-        width: 95%;
+        width: 90%;
         padding: 20px;
     }
 }
@@ -136,15 +133,17 @@ footer {
     }
 
     section {
-        width: 100%;
+        width: 90%;
         padding: 15px;
     }
 
-    .imagen-esquina-derecha, .imagen-esquina-izquierda {
-        width: 100px;
+    .imagen-esquina-izquierda {
+        top: 0px;
+        left: 0px;
+        width: 0px;
     }
 
     .imagen-esquina-inferior-derecha {
-        width: 150px;
+        width: 200px;
     }
 }
